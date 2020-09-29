@@ -15,7 +15,7 @@ import { PresBoardComponent } from './pres-board/pres-board.component';
 import { UserBoardComponent } from './user-board/user-board.component';
 import { TresorierBoardComponent } from './tresorier-board/tresorier-board.component';
 import { SgBoardComponent } from './sg-board/sg-board.component';
-
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +31,9 @@ import { SgBoardComponent } from './sg-board/sg-board.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule,
+    
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]

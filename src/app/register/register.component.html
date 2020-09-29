@@ -52,6 +52,49 @@
             </div>
           </div>
         </div>
+        <label for="Role">Role</label>
+        <input
+          type="text"
+          class="form-control"
+          name="Role"
+          [(ngModel)]="form.Role"
+          required
+          minlength="3"
+          maxlength="20"
+          #Role="ngModel"
+        />
+        <label for="date_naissance">date_naissance</label>
+        <input
+          type="date"
+          class="form-control"
+          name="date_naissance"
+          [(ngModel)]="form.date_naissance"
+          required
+          #date_naissance="ngModel"
+        />
+        <label for="lieu_naissance">lieu_naissance</label>
+        <input
+          type="text"
+          class="form-control"
+          name="lieu_naissance"
+          [(ngModel)]="form.lieu_naissance"
+          required
+          minlength="3"
+          maxlength="20"
+          #lieu_naissance="ngModel"
+        />
+        <label for="num_tel">num_tel</label>
+        <input
+          type="number"
+          class="form-control"
+          name="num_tel"
+          [(ngModel)]="form.num_tel"
+          required
+          minlength="8"
+          maxlength="20"
+          #num_tel="ngModel"
+        />
+
         <div class="form-group">
           <label for="password">Password</label>
           <input

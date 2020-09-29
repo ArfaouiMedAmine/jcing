@@ -1,0 +1,12 @@
+{
+  "/SpringMVC/servlet": {
+    "target": "http://localhost:81/",
+    "secure": false,
+    "loglevel": "debug"
+  },
+  "/api": {
+    "target": "http://localhost:81/",
+    "secure": false,
+    "loglevel": "debug"
+  }
+}
